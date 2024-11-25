@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Applications</title>
+    <link rel="stylesheet" href="track_app.css">
+</head>
+<body>
+    <header> 
+		<h1>Application Tracking</h1> 
+	</header>
+    <nav> 
+		<ul> 
+			<li><a href="Main_Page.html">Home</a></li> 
+			<li><a href="competitions.html">Competitions</a></li>  
+			<li><a href="AboutUS.html">About Us</a></li> 
+            <li><a href="track_app.html">Application Tracking</a></li> 
+ 
+		</ul> 
+	</nav> 
+    <div class="filter-container">
+        <label for="statusFilter">Filter by Status:</label>
+        <select id="statusFilter">
+            <option value="all">All</option>
+            <option value="accepted">Accepted</option>
+            <option value="rejected">Rejected</option>
+        </select>
+        <button onclick="filterTable()">Apply Filter</button>
+    </div>
+    <table>
+        <tr>
+          <th>Application</th>
+          <th>Date</th>
+          <th>Status</th>
+        </tr>
+        <tr>
+          <td>ABC Company</td>
+          <td>12/04/2022</td>
+          <td>Rejected</td>
+        </tr>
+        <tr>
+          <td>XYZ Company</td>
+          <td>5/6/2023</td>
+          <td>Accepeted</td>
+        </tr>
+      </table>
+    
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN PAGE</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+<div class="container">
+    <div class="form-box">
+        <h1 >Welcome to Yashita's Portal</h1>
+        <h1 id="Title">Sign Up</h1>
+        
+        <form>
+            <div class="input-group">
+                <div class="input_field" id="nameField">
+                     <input type="text" placeholder="Name">
+                </div>
+                <div class="input_field">
+                    <input type="email" placeholder="email">
+               </div>
+               <div class="input_field">
+                <input type="password" placeholder="password">
+                </div>
+                <p>Forgot password?<a href='#'>Click Here!</a></p>
+            </div>
+            <div class="submitBtn">
+                <button type="submit"><a href="/Main_Page.html">Enter</a></button>
+
+            </div>
+            <div class="btn-field">
+                
+                <button type="button" id="signupbtn">Sign Up</button>
+                <button type="button" id="signinbtn" class="disable" >Sign In</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    let signupbtn=document.getElementById("signupbtn");
+    let signinbtn=document.getElementById("signinbtn");
+    let name=document.getElementById("nameField");
+    let Title=document.getElementById("Title");
+
+
+    signinbtn.onclick=function()
+    {
+        nameField.style.maxHeight="0";
+        Title.innerHTML="Sign In";
+        signupbtn.classList.add("disable");
+        signinbtn.classList.remove("disable");
+    }
+    signupbtn.onclick=function()
+    {
+        nameField.style.maxHeight="60px";
+        Title.innerHTML="Sign Up"; 
+        signupbtn.classList.remove("disable");
+        signinbtn.classList.add("disable");
+    }
+
+</script>
+    
+</body>
+</html>
